@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.preview{
+    height: 852px;
+    background: url('./assets/images/bg-preview.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 100px;
+}
+
+.preview__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview__title{
+    color: white;
+    font-size: 150px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 250px 0 0 0;
+    letter-spacing: 50px;
+}
+
+.preview__subtitle{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin: 70px 0 0 0;
+}
+
+.travel{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px 30px;
+}
+
+.travel__text{
+    width: 348px;
+    font-size: 18px;
+}
+
+.travel__p{
+    margin: 30px 0 0 0;
+}
+
+.travel__title{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.travel__gallery{
+    display: flex;
+    gap: 10px;
+}
+
+.travel__gallery_left{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.travel__gallery_right{}
+
+.subscribe{
+    background: url('./assets/images/bg-subscribe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 625px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.subscribe__title{
+    font-size: 40px;
+    margin: 150px 0 40px 0;
+}
+
+.subscribe__desc{
+    width: 721px;
+    text-align: center;
+}
+
+.subscribe__email input{
+    margin: 20px 0;
+    width: 335px;
+    height: 66px;
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-bottom: 3px solid white;
+    outline: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.subscribe__btn{
+    cursor: pointer;
+    width: 335px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+
+.subscribe__btn:hover{
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 815px) {
+    .preview__title{
+        font-size: 60px;
+    }
+
+    .travel{
+        flex-direction: column;
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+
+    .travel__text{
+        width: 100%;
+    }
+
+    .travel__gallery{
+        margin: 50px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .preview{
+        padding: 20px 30px 0;
+    }
+
+    .preview__header{
+        align-items: center;
+    }
+    .preview__title{
+        font-size: 40px;
+        letter-spacing: 15px;
+    }
+    .preview__subtitle{
+        font-size: 18px;
+    }
+
+    .travel{
+        padding: 20px 25px 0;
+    }
+
+    .travel__title{
+        font-size: 28px;
+    }
+
+    .travel__p{
+        font-size: 16px;
+    }
+
+    .travel__gallery{
+        flex-direction: column;
+    }
+
+    .travel__gallery_left, .travel__gallery_right{
+        width: 100%;
+    }
+
+    .travel__gallery_left, .travel__gallery_right{
+        width: 100%;
+    }
+
+    .travel__gallery_right img{
+        width: 100%;
+    }
+
+    .subscribe{
+        padding: 20px 25px 0;
+        align-items: start;
+    }
+
+    .subscribe__title{
+        font-size: 28px;
+    }
+
+    .subscribe__desc{
+        font-size: 16px;
+        width: auto;
+        text-align: left;
+    }
+
+    .subscribe__email input, .subscribe__btn {
+        width: 285px;
+    }
+}
